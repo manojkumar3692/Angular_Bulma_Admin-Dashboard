@@ -1,0 +1,32 @@
+.header {
+    height: 75px;
+    padding: 0rem 1rem;
+    background-color: #00d1b2;  
+    &__container {
+        height: 100%;   
+    }
+    &__left {
+        p {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        a:hover {
+            color: #fff;
+        }
+    }
+    &__right {
+        p {
+           
+            a {
+                color: #fff;
+                font-size: 14px;
+            }
+            img {
+                width:50px;
+                height: 50px;
+                cursor: pointer;
+            }
+        }
+    }
+}

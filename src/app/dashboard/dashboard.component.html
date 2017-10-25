@@ -1,0 +1,62 @@
+<section class="dashboard">
+
+    <nav class="level dashboard__metrics">
+        <div class="level-item has-text-centered dashboard__metrics-item">
+            <div>
+                <p class="heading">Tweets</p>
+                <p class="title">3,456</p>
+            </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <div>
+                <p class="heading">Following</p>
+                <p class="title">123</p>
+            </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <div>
+                <p class="heading">Followers</p>
+                <p class="title">456K</p>
+            </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <div>
+                <p class="heading">Likes</p>
+                <p class="title">789</p>
+            </div>
+        </div>
+    </nav>
+
+    <section class="dashboard__charts columns">
+
+        <div class="column">
+            <div class="tile">
+                <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification is-primary">
+                        <p class="title">Email Statistics</p>
+                        <p class="subtitle">Last Campaign Performance</p>
+                    </article>
+                    <div style="display: block">
+                        <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="tile">
+                <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification is-danger">
+                        <p class="title">Users Behavior</p>
+                        <p class="subtitle">24 Hours performance</p>
+                    </article>
+                    <div style="display: block">
+                        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend" [chartType]="barChartType" (chartHover)="chartHoveredBar($event)" (chartClick)="chartClickedBar($event)"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</section>

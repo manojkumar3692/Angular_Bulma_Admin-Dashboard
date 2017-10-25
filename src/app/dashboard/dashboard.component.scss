@@ -1,0 +1,12 @@
+.dashboard {
+    padding: 2rem;
+    &__metrics {
+        border: 1px solid #999;
+        padding:1rem 0rem;
+    }
+    &__metrics-item {
+        p {
+            color: #394754; 
+        }
+    }
+}

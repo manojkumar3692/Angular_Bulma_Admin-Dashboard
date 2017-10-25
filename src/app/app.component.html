@@ -1,0 +1,61 @@
+<app-common-header></app-common-header>
+<section class="hero">
+
+  <section class="columns hero__container">
+
+    <div class="column is-3 hero__left">
+            <aside class="menu">
+                    <p class="menu-label">
+                      General
+                    </p>
+                    <ul class="menu-list">
+                      <li><a routerLink="/dashboard" routerLinkActive="is-active">Dashboard</a></li>
+                      <li><a routerLink="/profile-setting" routerLinkActive="is-active">Profile Settings</a></li>
+                    </ul>
+                    <p class="menu-label">
+                      Administration
+                    </p>
+                    <ul class="menu-list">
+                      <li><a>Team Settings</a></li>
+                      <li>
+                        <a class="is-primary">Manage Your Team</a>
+                        <ul>
+                          <li><a>Members</a></li>
+                          <li><a>Plugins</a></li>
+                          <li><a>Add a member</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Invitations</a></li>
+                      <li><a>Cloud Storage Environment Settings</a></li>
+                      <li><a>Authentication</a></li>
+                    </ul>
+                    <p class="menu-label">
+                      Transactions
+                    </p>
+                    <ul class="menu-list">
+                      <li><a>Payments</a></li>
+                      <li><a>Transfers</a></li>
+                      <li><a>Balance</a></li>
+                    </ul>
+                  </aside>
+
+    </div>
+
+    <div class="column hero__right">
+            <router-outlet></router-outlet>
+    </div>
+
+
+  </section>
+
+
+</section>
+<footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Footer</strong> content to be placed here ! <a href="http://jgthms.com">Manoj kumar S</a>
+        </p>
+      </div>
+    </div>
+  </footer>

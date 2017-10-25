@@ -1,0 +1,24 @@
+h1,h2,h3,h4 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.hero {
+    &__container {
+        margin-top: 0rem;
+    }
+    &__left {
+        padding: 2rem 2rem;
+        border-right: 1px solid #999;
+        p {
+            color: #00d1b2;
+        }
+        .is-active {
+            background-color: #394754;
+        }
+    }
+}
